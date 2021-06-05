@@ -1,4 +1,4 @@
-<img src="logo.png" alt=" BlendCash" height="100px">
+<img src="logo.jpg" alt=" BlendCash" height="100px">
 
 ## Overview
 
