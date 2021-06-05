@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT
 
+
 pragma solidity 0.7.6;
 
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
@@ -29,7 +30,7 @@ contract  BlendStaking is Ownable {
     }
 
     IERC20 public blend;
-    uint256 public blendPerBlock = uint256(5 ether).div(10); //0.5 SWIRL
+    uint256 public blendPerBlock = uint256(5 ether).div(10); //0.5 BLEND
 
     PoolInfo[] public poolInfo;
     mapping(uint256 => mapping(address => UserInfo)) public userInfo;
@@ -164,7 +165,7 @@ contract  BlendStaking is Ownable {
     }
     
     function set BlendPerBlock(uint256 _blendPerBlock) external onlyOwner {
-        require(_blendPerBlock > 0, "SWIRL per block should be greater than 0!");
+        require(_blendPerBlock > 0, "BLEND per block should be greater than 0!");
         blendPerBlock = _blendPerBlock;
     }
 }
